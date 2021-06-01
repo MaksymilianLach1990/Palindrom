@@ -1,5 +1,6 @@
 # Definicja sprawdzająca czy słowo jest palindromem
 def palindrom(name):
+    """ """
     # Potrzebne zmienne
     word = name
     letters = []
@@ -30,7 +31,9 @@ while True:
         answer = 'jest'
     else:
         answer = 'nie jest'
-    print("Twoje słowo: {}, {} palindromem.\nCzy chcesz spróbować jeszcze raz?(Y/N)".format(check_the_word, answer))
+    print("Twoje słowo: {}, {} palindromem.".format(check_the_word, answer))
+    # Zapytaj urzytkownika czy chce sprawdzić kolejne słowo
+    print("Czy chcesz spróbować jeszcze raz?(Y/N)")
     decision = input()
     if decision == 'Y':
         continue
